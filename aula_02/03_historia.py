@@ -1,0 +1,14 @@
+# Crie uma história simples
+# Adicione essa história em um programa.
+# A cada parágrafo, a história deve aguardar
+# o usuário apertar "enter" para dar continuidade.
+
+p1 = "Era uma vez, a chapeuzinho vermelho. Ela queria muito aprender sobre docker."
+p2 = "Ela não sabia por onde começar. Então conheceu a LinuxTips!"
+p3 = "Foi a melhor escolha que ela poderia ter feito. Aprendeu demais!"
+p4 = "Hoje, ela é referência na área de devops. Onde tudo começou lá atrás na LinuxTips."
+
+print(p1)
+print(p2)
+print(p3)
+print(p4)
