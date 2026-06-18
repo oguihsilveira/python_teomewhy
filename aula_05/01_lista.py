@@ -13,7 +13,7 @@ print(gui)
 # Tipo da variável gui (lista)
 print(type(gui))
 
-# Acessando o terceiro elemento (idade: 32)
+# Acessando o terceiro elemento (idade: 20)
 print(gui[2])
 
 # Acessando o último elemento usando índice negativo
@@ -62,8 +62,8 @@ teo[-1][-2] # Acessando o penúltimo filho da lista de filhos usando índices ne
 teo[0-4] # Acessando os primeiros 4 elementos da lista (nome, sobrenome, idade, tem filhos)
 teo[0:4] # Acessando os primeiros 4 elementos da lista usando slicing (nome, sobrenome, idade, tem filhos)
 
-teo[4][3:5] # Acessando os últimos 2 elementos da lista de filhos usando slicing (Maria, Claudia)
-teo[4][-2:] # Acessando os últimos 2 elementos da lista de filhos usando índices negativos e slicing (Maria, Claudia)
+teo[5][0:3] # Acessando os últimos 2 elementos da lista de filhos usando slicing (Maria, Claudia)
+teo[5][-2:] # Acessando os últimos 2 elementos da lista de filhos usando índices negativos e slicing (Maria, Claudia)
 
 joao = ["Joãozinho", "Silveira", 20, False, "solteiro", ["Ana", "Maria", "Claudia"], [1500.00, 2000.00, 2500.00]]
 salarios = joao[-1]
