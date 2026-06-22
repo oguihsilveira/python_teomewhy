@@ -16,14 +16,15 @@ for c in chaves:  # Percorrendo cada coluna encontrada no cabeçalho
     dados[c] = []  # Criando uma chave no dicionário com uma lista vazia para armazenar os valores da coluna
 
 for l in lines[1:]:  # Percorrendo as linhas de dados, ignorando a primeira linha (cabeçalho)
-    
-    valores = l.strip("\n").split(";")
-    
-    for i in range(0, len(valores)):
-        dados[chaves[i]].append(valores[i])
 
-idades = []
-for i in dados["idade"]:
-    idades.append(int(i))
+    valores = l.strip("\n").split(";")  # Removendo a quebra de linha e separando os valores da linha pelo ";"
 
-media = sum(idades) / len(idades)
+    for i in range(0, len(valores)):  # Percorrendo os índices dos valores encontrados na linha
+        dados[chaves[i]].append(valores[i])  # Adicionando cada valor na lista correspondente à sua coluna
+
+idades = []  # Criando uma lista vazia para armazenar as idades como números inteiros
+
+for i in dados["idade"]:  # Percorrendo todas as idades armazenadas no dicionário
+    idades.append(int(i))  # Convertendo a idade de texto para inteiro e adicionando na lista
+
+media = sum(idades) / len(idades)  # Calculando a média das idades
